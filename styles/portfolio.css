@@ -27,7 +27,7 @@
                 margin: 5px 0;
                 width: 6em;
                 text-decoration: none;
-                border: 2px solid #ffe600;
+                border: 2px solid #c5827b;
                 border-radius: 20px;
                 padding: 5px 15px;
             }
@@ -36,7 +36,7 @@
                 outline: none;
                 background-position: bottom;
                 color: #ffffff;
-                border: 2px solid #ffe600;
+                border: 2px solid #c5827b;
                 transform: scale(1.1);
             }
         }

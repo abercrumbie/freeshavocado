@@ -4,9 +4,9 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
-    background-color: black;
+    background-color: rgba(57, 70, 52, 0.92);
     padding: 20px;
-    color: #ffe600;
+    color: #c5827b;
     line-height: 1;
 }
 
@@ -26,8 +26,8 @@ main {
     .contact-section-left {
         border: 1px solid;
         border-radius: 20px;
-        background-color: #ffe600;
-        color: black;
+        background-color: #c5827b;
+        color: rgba(57, 70, 52, 0.92);
         padding: 20px;
         min-width: 18em;
 
@@ -40,7 +40,7 @@ main {
         display: flex;
         flex-direction: column;
         gap: 20px;
-        border: 1px solid #ffe600;
+        border: 1px solid #c5827b;
         padding-bottom: 20px;
 
         .form-group {
@@ -54,7 +54,7 @@ main {
             border: none;
             border-bottom: 2px solid #000000;
             background: none;
-            color: black;
+            color: rgba(57, 70, 52, 0.92);
             padding-bottom: 20px;
 
             @media (min-width: 1024px){
@@ -72,7 +72,7 @@ main {
             top: 8px;
             left: 5px;
             font-size: 16px;
-            color: black;
+            color: rgba(57, 70, 52, 0.92);
             pointer-events: none;
             transition: 0.3s;
         }
@@ -88,7 +88,7 @@ main {
         padding-bottom: 20px;
 
         fieldset {
-            border: 1px solid black;
+            border: 1px solid rgba(57, 70, 52, 0.92);
 
             @media (min-width: 1024px) {
                 display: grid;
@@ -112,25 +112,25 @@ main {
     }
 
     .contact-form-button {
-        border: 1px solid black;
+        border: 1px solid rgba(57, 70, 52, 0.92);
         border-radius: 20px;
         height: 2em;
         width: 11em;
         text-align: center;
         align-content: center;
-        background-color: black;
+        background-color:rgba(57, 70, 52, 0.92);
 
         a {
             text-decoration: none;
-            color: #ffe600;
+            color: #c5827b;
         }
     }
 
     .contact-section-right {
-        border: 1px solid black;
+        border: 1px solid rgba(57, 70, 52, 0.92);
         border-radius: 20px;
         padding: 20px;
-        color: black;
+        color: rgba(57, 70, 52, 0.92);
         background-color: white;
         min-width: 18em;
 

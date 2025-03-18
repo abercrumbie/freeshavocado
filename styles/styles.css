@@ -2,9 +2,9 @@ body {
     font-family: "Inter", arial, sans-serif;
     margin: 0 auto;
     padding: 0;
-    background-color: black;
+    background-color: rgba(57, 70, 52, 0.92);
     padding: 20px;
-    color: #ffe600;
+    color: #c5827b;
     line-height: 1;
 }
 
@@ -25,7 +25,7 @@ video {
     top: 20px;
     right: 20px;
     font-size: 30px;
-    color: #ffe600;
+    color: #c5827b;
     /* text-shadow: 3px -1px 2px #708A66; */
     cursor: pointer;
     z-index: 10;
@@ -66,7 +66,7 @@ video {
 
     ul li a {
         text-decoration: none;
-        color: #ffe600;
+        color: #c5827b;
         font-size: calc(1rem + 8vw);
         transition: color 0.3s;
     }
@@ -82,7 +82,7 @@ video {
 
 
 header {
-    color: #ffe600;
+    color: #c5827b;
     margin: 0;
     font-size: calc(1rem + 8.5vw);
 
@@ -138,7 +138,7 @@ header {
             backdrop-filter: blur(3.7px);
             -webkit-backdrop-filter: blur(3.7px);
             margin-right: 20px;
-            border: 1px solid #ffe600;
+            border: 1px solid #c5827b;
             transition: transform 0.3s ease-in-out;
         }
 
@@ -158,7 +158,7 @@ header {
             backdrop-filter: blur(3.7px);
             -webkit-backdrop-filter: blur(3.7px);
             margin-right: 20px;
-            border: 1px solid #ffe600;
+            border: 1px solid c5827b;
             transition: transform 0.3s ease-in-out;
         }
 
@@ -177,7 +177,7 @@ header {
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(3.7px);
             -webkit-backdrop-filter: blur(3.7px);
-            border: 1px solid #ffe600;
+            border: 1px solid c5827b;
             transition: transform 0.3s ease-in-out;
         }
 
@@ -218,7 +218,7 @@ header {
 
 
 footer {
-    color: #ffe600;
+    color: c5827b;
     padding-right: 50px;
     text-align: right;
     font-size: 16px;
