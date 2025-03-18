@@ -1,0 +1,147 @@
+/* Verborgen menu */
+.menu {
+    background-color: rgba(112, 138, 102, 0.92);
+}
+
+.menu ul li a:hover {
+    color: #1d490b;
+}
+
+
+header {
+    .back-home {
+        color: #ffe600;
+        margin-top: 50px;
+        /* Zorgt voor afstand van de bovenkant van de pagina */
+        display: inline-block;
+        /* Zorgt dat de margin werkt zoals verwacht bij inline-elementen */
+        text-decoration: none;
+        transition: transform 0.4s ease-in-out;
+        font-size: 18px;
+    }
+
+    .back-home:hover {
+        transform: scale(1.1);
+    }
+
+    .jslog {
+        color: #ffe600;
+        font-size: 18px;
+        padding-bottom: 0px;
+        text-shadow: none;
+        display: inline-block;
+        /* Zorgt dat de margin werkt zoals verwacht bij inline-elementen */
+        text-decoration: none;
+        transition: transform 0.4s ease-in-out;
+        font-size: 24px;
+    }
+
+    .jslog:hover {
+        transform: scale(1.1);
+    }
+    
+}
+
+/* Layout voor tekst en afbeelding naast elkaar */
+.container {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding-top: 100px;
+}
+
+.blok {
+    flex: 1 1 25%;
+    /* Zorgt ervoor dat de blokken naast elkaar staan en schalen */
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgba(141, 141, 141, 0.8);
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.4s ease-in-out;
+    color: white;
+
+    h2 {
+        color: #ffe600;
+    }
+
+    img {
+        max-width: 75%;
+        height: auto;
+        justify-content: center;
+        padding: 8px;
+        border-radius: 10px;
+        align-items: center;
+        padding-top: 5px;
+    }
+
+    p {
+        text-align: left;
+    }
+
+    li {
+        text-align: left;
+    }
+
+    a {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.28) 50%, rgba(112, 138, 102, 0.8) 50%);
+        background-size: 100% 200%;
+        background-position: top;
+        transition-duration: .4s;
+        color: #ffffff;
+        text-align: right;
+        justify-content: right;
+        border: 2px solid #ffffff;
+        margin: 5px 0;
+        /* Voeg verticale ruimte tussen de knoppen toe */
+        text-decoration: none;
+        border: 2px solid #708A66;
+        border-radius: 20px;
+        padding: 5px 15px;
+        display: inline-block;
+        /* Zorg dat de knoppen netjes onder elkaar staan */
+    }
+}
+
+.blok:hover {
+    transform: scale(1.1);
+}
+
+.blok a:is(:hover, :focus-visible) {
+    outline: none;
+    background-position: bottom;
+    color: #ffffff;
+    border: 2px solid #708A66;
+}
+
+/* Verberg het nieuwe blok standaard */
+.hidden-block {
+    display: none;
+}
+
+/* Toon het nieuwe blok wanneer het target is */
+#new-block:target {
+    display: block;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+
+@media (max-width: 768px) {
+    .blok {
+        flex-basis: 100%;
+        /* Zorgt ervoor dat de blokken onder elkaar worden geplaatst op kleinere schermen */
+    }
+}
+
+footer {
+    color: #ffe600;
+    padding-right: 50px;
+    text-align: right;
+    font-size: 18px;
+}

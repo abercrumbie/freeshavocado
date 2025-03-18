@@ -1,0 +1,64 @@
+body{
+    font-family: "Inter", arial, sans-serif;
+    /* background-color: rgba(112, 138, 102); */
+    margin: 0 auto;
+    padding: 0;
+    color: #ffe600;
+
+    h1, h2, h3, p, a{
+        padding-left: 20px;
+    }
+}
+
+
+header {
+    line-height: 1;
+    font-size: calc(1rem + 6vw);
+    /* text-shadow: 5px -2px 2px #ffdd00; */
+    /* text-shadow: 5px -2px 2px #708A66; */
+
+    .title {
+        text-align: left;
+    }
+
+    .profession {
+        font-size: 18px;
+        text-align: right;
+        padding-right: 20px;
+        text-shadow: none;
+    }
+}
+
+main{
+    ul{
+        list-style: none;
+    }
+}
+
+.block-1{
+
+}
+
+.block-2{
+
+}
+
+.block-3{
+
+}
+
+.block-4{
+
+}
+
+.block-5{
+
+}
+
+.block-6{
+
+}
+
+.block-7{
+
+}
