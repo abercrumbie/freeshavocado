@@ -1,28 +1,176 @@
 body {
-    font-family: "Inter", arial, sans-serif;
-    margin: 0 auto;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    background-color: rgba(57, 70, 52, 0.92);
-    padding: 20px;
-    color: #c5827b;
-    line-height: 1;
+    background-image: url("../images/Image\ \(10\).jpeg");
+    background-color: #c5827b;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: fit-content;
-    padding: 20px;
 
-    @media (min-width: 1024px) {
-        display: grid;
-        grid-template-columns: 3fr 1fr;
+header {
+    .back-home {
+        color: #c5827b;
+        margin-top: 4%;
+        display: inline-block;
+        text-decoration: none;
+        transition: transform 0.4s ease-in-out;
+        font-size: 18px;
+    }
+ 
+
+    .title-services {
+        text-align: left;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
     }
 
+    .back-home:hover {
+        transform: scale(1.1);
+    }
+
+    .jslog {
+        color: #c5827b;
+        font-size: 18px;
+        padding-bottom: 0px;
+        text-shadow: none;
+        display: inline-block;
+        /* Zorgt dat de margin werkt zoals verwacht bij inline-elementen */
+        text-decoration: none;
+        transition: transform 0.4s ease-in-out;
+        font-size: 24px;
+    }
+
+    .jslog:hover {
+        transform: scale(1.1);
+    }
+    
+}
+
+/* Verborgen menu */
+.menu {
+background-color: rgba(112, 138, 102, 0.92);
+}
+
+.menu ul li a:hover {
+color: #1d490b;
+}
+
+
+header {
+.back-home {
+    color: #c5827b;
+    display: inline-block;
+    text-decoration: none;
+    transition: transform 0.4s ease-in-out;
+    font-size: 18px;
+}
+
+.title-services {
+    text-align: left;
+    height: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.back-home:hover {
+    transform: scale(1.1);
+}
+
+}
+
+/* Verborgen menu */
+.menu {
+    background-color: rgba(112, 138, 102, 0.92);
+}
+
+.menu ul li a:hover {
+    color: #1d490b;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+
+}
+
+.blok {
+
+    padding-top: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgba(112, 138, 102, 0.92);
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    transition: transform 0.4s ease-in-out;
+    color:rgba(57, 70, 52, 0.92);
+
+    h2 {
+        color: rgba(36, 48, 31, 0.92);
+    }
+
+    p {
+        text-align: left;
+    }
+
+    li {
+        text-align: left;
+    }
+
+}
+
+.blok:hover {
+    transform: scale(1.02);
+}
+
+.blok a:is(:hover, :focus-visible) {
+    outline: none;
+    background-position: bottom;
+    color: #ffffff;
+    border: 2px solid #708A66;
+}
+
+/* Verberg het nieuwe blok standaard */
+.hidden-block {
+    display: none;
+}
+
+/* Toon het nieuwe blok wanneer het target is */
+#new-block:target {
+    display: block;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+
+@media (max-width: 768px) {
+    .blok {
+        flex-basis: 80%;
+        /* Zorgt ervoor dat de blokken onder elkaar worden geplaatst op kleinere schermen */
+    }
+}
+
+footer {
+    color: #c5827b;
+    padding-right: 50px;
+    text-align: right;
+    font-size: 18px;
+    padding-bottom: 2%;
+}
+
+
+
+
+    /*
     .contact-section-left {
         border: 1px solid;
         border-radius: 20px;
@@ -64,6 +212,7 @@ main {
     
         input:focus {
             /* border-bottom-color: white; */
+            /*
             outline: none;
         }
 
@@ -138,4 +287,4 @@ main {
             height: 30em; 
         }
     }
-}
+    /*
