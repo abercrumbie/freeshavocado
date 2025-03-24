@@ -1,51 +1,76 @@
-.projects-container {
-    .projects {
-        border: 2px solid;
-        border-radius: 20px;
-        padding: 20px;
-        background-color: rgba(0, 0, 0, 0.2);
 
-        @media (min-width: 1024px) {
-            display: grid;
-            grid-template-columns: 2fr 1fr; /* Linkerkant: tekst, Rechterkant: afbeelding */
-            align-items: center; /* Centreert de inhoud verticaal */
-            gap: 20px; /* Ruimte tussen tekst en afbeelding */
-        }
+* {
+    box-sizing: border-box;
+  }
+  
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
 
-        .text-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center; /* Zorgt ervoor dat alles verticaal gecentreerd wordt */
-            padding-bottom: 20px;
-
-            a{
-                background-image: linear-gradient(rgba(255, 255, 255, 0.28) 50%, rgba(225, 138, 102, 0.8) 50%);
-                background-size: 100% 200%;
-                transition-duration: .4s;
-                text-align: center;
-                color: #ffffff;                
-                margin: 5px 0;
-                width: 6em;
+        header {
+            .back-home {
+                color: #c5827b;
+                display: inline-block;
                 text-decoration: none;
-                border: 2px solid #c5827b;
-                border-radius: 20px;
-                padding: 5px 15px;
+                transition: transform 0.4s ease-in-out;
+                font-size: 18px;
             }
-
-            a:is(:hover, :focus-visible) {
-                outline: none;
-                background-position: bottom;
-                color: #ffffff;
-                border: 2px solid #c5827b;
+        
+            .back-home:hover {
                 transform: scale(1.1);
             }
+        
+            .jslog {
+                color: #c5827b;
+                font-size: 18px;
+                padding-bottom: 0px;
+                text-shadow: none;
+                display: inline-block;
+                /* Zorgt dat de margin werkt zoals verwacht bij inline-elementen */
+                text-decoration: none;
+                transition: transform 0.4s ease-in-out;
+                font-size: 24px;
+            }
+        
+            .jslog:hover {
+                transform: scale(1.1);
+            }
+            
         }
-
-        img {
-            width: 300px;
-            height: auto;
-            border-radius: 20px;
-            justify-self: end; 
-        }
-    }
-}
+    
+          
+          /* Create four equal columns that sits next to each other */
+          .column {
+            -ms-flex: 25%; /* IE10 */
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+          }
+          
+          .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+          }
+          
+          /* Responsive layout - makes a two column-layout instead of four columns */
+          @media screen and (max-width: 800px) {
+            .column {
+              -ms-flex: 50%;
+              flex: 50%;
+              max-width: 50%;
+            }
+          }
+          
+          /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+          @media screen and (max-width: 600px) {
+            .column {
+              -ms-flex: 100%;
+              flex: 100%;
+              max-width: 100%;
+            }
+          }
