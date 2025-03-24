@@ -1,22 +1,22 @@
 body {
     font-family: "Inter", arial, sans-serif;
     margin: 0 auto;
-    padding: 0;
     background-color: rgba(57, 70, 52, 0.92);
-    padding: 20px;
+    padding-top: 0px;
+    padding-right: 2%;
+    padding-left: 2%;
+    padding-bottom: 5%;
     color: #c5827b;
     line-height: 1;
-}
-
-video {
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    filter: brightness(70%);
+    /* Unvisited link */
+a:link {
+    color: #e3a9a2;
+    }
+    
+    /* Visited link */
+    a:visited {
+    color: #a86861;
+    }
 }
 
 /* Hamburger Menu */
@@ -82,23 +82,25 @@ video {
 
 
 header {
-    color: #c5827b;
-    margin: 0;
-    font-size: calc(1rem + 8.5vw);
+    color: rgba(112, 138, 102, 0.85);
+    font-size:7.5vw;
 
     .title {
         text-align: left;
+        background-image: url(../images/header.jpeg);
+        height: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
     }
 
     .profession {
-        font-size: 18px;
+        color: rgba(57, 70, 52, 0.92);
+        font-size: 28px;
+        line-height: 1.6;
         text-align: right;
         text-shadow: none;
     }
-
-    /* .title, .profession{
-        width: 100%;
-    } */
 
 }
 
@@ -115,107 +117,7 @@ header {
     h2 {
         font-size: calc(1rem + 6vw);
     }
-
-    .socials {
-        display: flex;
-
-        @media (min-width: 1024px){
-            svg{
-                width: 80px;
-                height: 80px;
-            }
-        }
-
-        .instagram {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 10em;
-            height: 10em;
-            background: rgba(255, 255, 255, 0.26);
-            border-radius: 20px;
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(3.7px);
-            -webkit-backdrop-filter: blur(3.7px);
-            margin-right: 20px;
-            border: 1px solid #c5827b;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .instagram:hover {
-            transform: scale(1.1);
-        }
-
-        .linkedin {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 10em;
-            height: 10em;
-            background: rgba(255, 255, 255, 0.26);
-            border-radius: 20px;
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(3.7px);
-            -webkit-backdrop-filter: blur(3.7px);
-            margin-right: 20px;
-            border: 1px solid c5827b;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .linkedin:hover{
-            transform: scale(1.1);
-        }
-
-        .github {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 10em;
-            height: 10em;
-            background: rgba(255, 255, 255, 0.26);
-            border-radius: 20px;
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(3.7px);
-            -webkit-backdrop-filter: blur(3.7px);
-            border: 1px solid c5827b;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .github:hover{
-            transform: scale(1.1);
-        }
-    }
 }
-
-
-
-/*.arrow{
-    position: relative;
-    bottom: -2rem;
-    left: 50%;
-    margin-left:-20px;
-    width: 40px;
-    height: 40px;
-    padding-bottom: 5px;
-}
-
-.bounce{
-    animation: bounce 2s infinite;
-}*/
-
-/* @keyframes bounce {
-    0%, 20%, 50%, 80%, 100%{
-        transform: translateY(0);
-    }
-    40%{
-        transform: translateY(-30px);
-    }
-    60%{
-        transform: translateY(-15px);
-    }
-} */
-
-
 
 footer {
     color: c5827b;
