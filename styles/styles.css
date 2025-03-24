@@ -22,10 +22,10 @@ a:link {
 /* Hamburger Menu */
 .hamburger {
     position: fixed;
-    top: 20px;
-    right: 20px;
-    font-size: 30px;
-    color: #c5827b;
+    top: 40px;
+    right: 40px;
+    font-size: 40px;
+    color: #ffffff;
     /* text-shadow: 3px -1px 2px #708A66; */
     cursor: pointer;
     z-index: 10;
