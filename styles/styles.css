@@ -48,6 +48,14 @@ background-size: cover;
         text-shadow: none;
         padding-right: 1em;
     }
+    .professionindex {
+        color: rgba(255, 255, 255, 0.92);
+        font-size: 0.5em;
+        line-height: 1.6;
+        text-align: right;
+        text-shadow: none;
+        padding-right: 1em;
+    }
 
 }
 .rateslist{
