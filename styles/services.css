@@ -95,20 +95,12 @@ background-size: cover;
     }
 
     a {
-        background-image: linear-gradient(rgba(255, 255, 255, 0.28) 50%, rgba(112, 138, 102, 0.8) 50%);
-        background-size: 100% 200%;
-        background-position: top;
         transition-duration: .4s;
-        color: #ffffff;
+        color: #e3a9a2;
         text-align: right;
         justify-content: right;
-        border: 2px solid #ffffff;
-        margin: 5px 0;
         /* Voeg verticale ruimte tussen de knoppen toe */
         text-decoration: none;
-        border: 2px solid #708A66;
-        border-radius: 20px;
-        padding: 5px 15px;
         display: inline-block;
         /* Zorg dat de knoppen netjes onder elkaar staan */
     }
@@ -120,9 +112,7 @@ background-size: cover;
 
 .blok a:is(:hover, :focus-visible) {
     outline: none;
-    background-position: bottom;
     color: #ffffff;
-    border: 2px solid #708A66;
 }
 
 /* Verberg het nieuwe blok standaard */

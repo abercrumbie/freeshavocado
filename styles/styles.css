@@ -11,12 +11,48 @@ body {
     /* Unvisited link */
 a:link {
     color: #e3a9a2;
+    transition-duration: .4s;
+    text-align: right;
+    justify-content: right;
+    text-decoration: none;
+    display: inline-block;
     }
     
     /* Visited link */
     a:visited {
     color: #a86861;
     }
+    a:is(:hover, :focus-visible) {
+        outline: none;
+        color: #ffffff;
+    }
+}
+
+header {
+    color: rgba(112, 138, 102, 0.85);
+    font-size:7.5vw;
+
+    .title {
+        text-align: left;
+        height: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+    }
+
+    .profession {
+        color: rgba(57, 70, 52, 0.92);
+        font-size: 0.5em;
+        line-height: 1.6;
+        text-align: right;
+        text-shadow: none;
+        padding-right: 1em;
+    }
+
+}
+.rateslist{
+    list-style-type: none; 
+    text-align: center;
 }
 
 /* Hamburger Menu */
@@ -80,29 +116,6 @@ a:link {
     color: #1d490b;
 }
 
-
-header {
-    color: rgba(112, 138, 102, 0.85);
-    font-size:7.5vw;
-
-    .title {
-        text-align: left;
-        background-image: url(../images/header.jpeg);
-        height: 100%;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-    }
-
-    .profession {
-        color: rgba(57, 70, 52, 0.92);
-        font-size: 28px;
-        line-height: 1.6;
-        text-align: right;
-        text-shadow: none;
-    }
-
-}
 
 .about-me-block {
     margin: 0;
