@@ -61,11 +61,14 @@ background-size: cover;
 }
 p {
     font-size: 1em;
-    padding-left: 2em;
+    padding-left: 0.2em;
+    text-align: center;
 }
 @media screen and (min-width: 700px) {
     p {
         font-size: 0.4em;
+        padding-left: 2em;
+        text-align: left;
     }
   }
 .signoff {
